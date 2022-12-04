@@ -1,0 +1,46 @@
+1                !nrun    ! nrun >1 means restarting the simulation. 
+10000		 !Npt     !Max number of cells
+400000           !Nt      !Max number of steps
+50   		 !ndata   !Storage parameter
+60   		 !Npy     !number of particles in the tailbud boundary
+60    		 !Npx0    !Number of particles in the AP direction at the beginning
+4                !Npr0     !Initial size of the sphear (Cell)
+8                !Npr1     !Initial size of the sphear (Cell+Matrix)
+200   		 !Npx     !Max number of particles in the AP direction
+0.01d0  	 !Df      !Single cell diffusivity/activity
+80629  		 !iseed   !Seed for the Mesenne Twister
+ 20.0d0 	 !kss   ! Cell-cell repulsion force constant
+ 200.0d0 	 !kas   ! Repulsion between matrix and the cell constant
+   5.0d0 	 !Es    ! Elasticity Coefficient of substrate
+1.0d0    	 !a     ! Cell size
+2.0d0    	 !rlj   ! LJ Cut-off length
+20.0d0   	 !gm      ! Viscous friction
+ 10.0d0   	 !mu      ! Viscous friction of material
+100.0d0   	 !tau    ! Slowest time scale
+  1.0d0   	 !tauG   ! Growth relaxation time 
+0.5d0   	 !ls_cut ! ReLinking cutoff 
+0.00200d0 	 !delta
+1.00d0    	 !rhos  ! Cell packing density of matrix at the beginning
+0.70d0    	 !rho0  ! Maximum cell packing density at the beginning
+0.70d0    	 !rhom  ! Maximum cell packing density
+0.030d0           !eps0  ! The minima in LJ for Cells
+0.010d0           !epsm  ! The minima in LJ for Matrix
+0.3000d0           !epst  ! The minima in LJ repulsion between TB & Rest
+1.0d0            !Ar    ! Coefficient for repulsive part
+2.0d0            !Aa0   ! Coefficient for attractive part
+0.5d0            !Aaw0  ! Coefficient for attractive part for the walls
+0.02d0           !Aamin ! Coefficient for (min.) attractive part
+0.70d0           !rhoc  ! Density at which attraction potential becomes strong
+0.01d0           !l_rho ! length scale over which attraction potential changes its sign.
+8.d0             !rn    ! LJ, repulsive force power
+4.d0             !an    ! LJ, attractive force power
+12.d0            !rnw   ! LJ, repulsive force power for walls
+6.d0             !anw   ! LJ, attractive force power for walls
+12.d0            !r12   ! LJ, repulsive force power
+6.d0             !a6    ! LJ, attractive force power
+.false.          !FGF_grad     ! Flag for motility      
+.false.          !density_Aa     ! Flag for density dependent Aa
+.true.           !stress_dependent     ! Flag for stress dependent proliferation
+.false.          !uniform_prol         ! Flag for uniform proliferation
+.false.          !uniform_prol_center  ! Flag for uniform proliferation at the center
+
